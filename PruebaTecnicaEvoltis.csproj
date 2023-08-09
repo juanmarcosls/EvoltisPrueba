@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="Pages\Index.aspx" />
     <Content Include="Pages\CRUD.aspx" />
+    <Content Include="PruebaTecnicaEvoltis.sql" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
