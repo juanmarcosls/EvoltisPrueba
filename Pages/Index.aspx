@@ -20,11 +20,14 @@
         <br />
         <div class="row">
             <div class="col-md-6">
-                <asp:TextBox runat="server" ID="txtSearch" CssClass="form-control" placeholder="Buscar por nombre"></asp:TextBox>
-            </div>
+            <asp:TextBox runat="server" ID="txtSearch" CssClass="form-control" placeholder="Buscar por nombre"></asp:TextBox>
+        </div>
             <div class="col-md-2">
-                <asp:Button runat="server" Text="Buscar" CssClass="btn btn-primary btn-block" OnClick="btnSearch_Click" />
-            </div>
+        <asp:Button runat="server" Text="Buscar" CssClass="btn btn-primary btn-block" OnClick="btnSearch_Click" />
+        </div>
+            <div class="col-md-2">
+            <asp:Button runat="server" Text="Mostrar todos" CssClass="btn btn-secondary" OnClick="btnShowAll_Click" />
+        </div>
         </div>
         <br />
         <div class="row">

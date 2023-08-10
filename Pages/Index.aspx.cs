@@ -44,6 +44,11 @@ namespace PruebaTecnicaEvoltis.Pages
                 gvusempleados.DataBind();
             }
         }
+        protected void btnShowAll_Click(object sender, EventArgs e)
+        {
+            txtSearch.Text = "";
+            CargarTabla();
+        }
 
         protected void BtnCreate_Click(object sender, EventArgs e)
         {
