@@ -1,20 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
 using System.Data;
-using System.Linq;
-using System.Web;
 using System.Web.UI;
-using System.Web.UI.WebControls;
+
 
 namespace PruebaTecnicaEvoltis.Pages
 {
     public partial class CRUD : System.Web.UI.Page
     {
-        readonly SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["conexion"].ConnectionString);
+        readonly SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["DbContext"].ConnectionString);
         public static string sID = "-1";
         public static string sOpc = "";
+
+       
 
         protected void Page_Load(object sender, EventArgs e)
         {

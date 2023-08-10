@@ -10,16 +10,17 @@
         <asp:Label runat="server" CssClass="h2" ID="lbltitulo"></asp:Label>
     </div>
     <form runat="server" class="h-100 d-flex align-items-center justify-content-center">
+        
         <div>
             <div class="mb-3">
                 <label class="form-label">Nombre</label>
                 <asp:TextBox runat="server" CssClass="form-control" ID="tbnombre" placeholder="Ej: Juan Marcos"></asp:TextBox>
-                <asp:RegularExpressionValidator runat="server" ControlToValidate="tbnombre" ErrorMessage="Solo se permiten letras" ValidationExpression="^[a-zA-Z]+$" />
+                <asp:RegularExpressionValidator runat="server" ControlToValidate="tbnombre" ErrorMessage="Solo se permiten letras" ValidationExpression="^[a-zA-Z ]+$"  />
             </div>
             <div class="mb-3">
                 <label class="form-label">Apellido</label>
                 <asp:TextBox runat="server" CssClass="form-control" ID="tbapellido" placeholder="Ej: Lemos Smit"></asp:TextBox>
-                <asp:RegularExpressionValidator runat="server" ControlToValidate="tbapellido" ErrorMessage="Solo se permiten letras" ValidationExpression="^[a-zA-Z]+$" />
+                <asp:RegularExpressionValidator runat="server" ControlToValidate="tbapellido" ErrorMessage="Solo se permiten letras" ValidationExpression="^[a-zA-Z ]+$"  />
             </div>
             <div class="mb-3">
                 <label class="form-label">Email</label>

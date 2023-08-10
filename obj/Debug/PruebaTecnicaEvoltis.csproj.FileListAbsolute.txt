@@ -57,3 +57,7 @@ C:\Users\Windows 10\Desktop\Prueba tecnica evoltis\PruebaTecnicaEvoltis\obj\Debu
 C:\Users\Windows 10\Desktop\Prueba tecnica evoltis\PruebaTecnicaEvoltis\obj\Debug\PruebaTecnicaEvoltis.csproj.CopyComplete
 C:\Users\Windows 10\Desktop\Prueba tecnica evoltis\PruebaTecnicaEvoltis\obj\Debug\PruebaTecnicaEvoltis.dll
 C:\Users\Windows 10\Desktop\Prueba tecnica evoltis\PruebaTecnicaEvoltis\obj\Debug\PruebaTecnicaEvoltis.pdb
+C:\Users\Windows 10\Desktop\Prueba tecnica evoltis\PruebaTecnicaEvoltis\bin\EntityFramework.dll
+C:\Users\Windows 10\Desktop\Prueba tecnica evoltis\PruebaTecnicaEvoltis\bin\EntityFramework.SqlServer.dll
+C:\Users\Windows 10\Desktop\Prueba tecnica evoltis\PruebaTecnicaEvoltis\bin\EntityFramework.xml
+C:\Users\Windows 10\Desktop\Prueba tecnica evoltis\PruebaTecnicaEvoltis\bin\EntityFramework.SqlServer.xml

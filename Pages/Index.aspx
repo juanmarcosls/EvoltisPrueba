@@ -6,33 +6,45 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="body" runat="server">
     <form runat="server">
-        <br />
-        <div class="mx-auto" style="width:300px">
-            <h2>Listado de registros</h2>
+    <br />
+    <div class="mx-auto" style="width:300px">
+        <h2>Listado de registros</h2>
+    </div>
+    <br />
+    <div class="container">
+        <div class="row">
+            <div class="col align-self-end">
+                <asp:Button runat="server" ID="BtnCreate" CssClass="btn btn-success btn-sm" Text="Crear nuevo empleado" OnClick="BtnCreate_Click"/>
+            </div>
         </div>
         <br />
-        <div class="container">
-            <div class="row">
-                <div class="col align-self-end">
-                    <asp:Button runat="server" ID="BtnCreate" CssClass="btn btn-success form-control-sm" Text="Create" OnClick="BtnCreate_Click"/>
+        <div class="row">
+            <div class="col-md-6">
+                <asp:TextBox runat="server" ID="txtSearch" CssClass="form-control" placeholder="Buscar por nombre"></asp:TextBox>
+            </div>
+            <div class="col-md-2">
+                <asp:Button runat="server" Text="Buscar" CssClass="btn btn-primary btn-block" OnClick="btnSearch_Click" />
+            </div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-12">
+                <div class="table-responsive">
+                    <asp:GridView runat="server" ID="gvusempleados" CssClass="table table-striped table-bordered table-hover">
+                        <Columns>
+                            <asp:TemplateField HeaderText="Opciones del administrador">
+                                <ItemTemplate>
+                                    <asp:Button runat="server" Text="Leer" CssClass="btn btn-info btn-sm" ID="BtnRead" OnClick="BtnRead_Click"/>
+                                    <asp:Button runat="server" Text="Actualizar" CssClass="btn btn-warning btn-sm" ID="BtnUpdate" OnClick="BtnUpdate_Click"/>
+                                    <asp:Button runat="server" Text="Eliminar" CssClass="btn btn-danger btn-sm" ID="BtnDelete" OnClick="BtnDelete_Click"/>
+                                </ItemTemplate>
+                            </asp:TemplateField>
+                        </Columns>
+                    </asp:GridView>
                 </div>
             </div>
         </div>
-        <br />
-        <div class="container row">
-            <div class="table small">
-                <asp:GridView runat="server" ID="gvusempleados" class="table table-borderless table-hover">
-                    <Columns>
-                        <asp:TemplateField HeaderText="Opciones del administrador">
-                            <ItemTemplate>
-                                <asp:Button runat="server" Text="Read" CssClass="btn form-control-sm btn-info" ID="BtnRead" OnClick="BtnRead_Click"/>
-                                <asp:Button runat="server" Text="Update" CssClass="btn form-control-sm btn-warning" ID="BtnUpdate" OnClick="BtnUpdate_Click"/>
-                                <asp:Button runat="server" Text="Delete" CssClass="btn form-control-sm btn-danger" ID="BtnDelete" OnClick="BtnDelete_Click"/>
-                            </ItemTemplate>
-                        </asp:TemplateField>
-                    </Columns>
-                </asp:GridView>
-            </div>
-        </div>
-    </form>
+    </div>
+</form>
+
 </asp:Content>
